@@ -455,7 +455,8 @@ class Grid(object):
             # Key is new tick pos, value is labeltop, labelbottom
             xlabeldict = {'bottom': ['off', 'on'],
                           'top'   : ['on', 'off'],
-                          'none'  : ['off', 'off']}
+                          'none'  : ['off', 'off'],
+                          'both'  : ['on', 'on']}
 
             old_tickpos = ax.xaxis.get_ticks_position()
             new_tickpos = xtick_dict[old_tickpos][which]
